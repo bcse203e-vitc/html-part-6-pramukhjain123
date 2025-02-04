@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Vowels and Consonants</title>
+</head>
+<body>
+    <script>
+        let str = prompt("Enter a string:").toLowerCase();
+        let vowels = str.match(/[aeiou]/g) || [];
+        let consonants = str.match(/[bcdfghjklmnpqrstvwxyz]/g) || [];
+        alert(`Vowels: ${vowels.length}, Consonants: ${consonants.length}`);
+    </script>
+</body>
+</html>
