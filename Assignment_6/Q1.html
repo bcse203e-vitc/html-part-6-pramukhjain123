@@ -1,1 +1,24 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function inpu()
+        {
+            let a=parseFloat(prompt("Enter the first number:","")) ;
+            let b=parseFloat(prompt("Enter the second number:",""));
+            a=a+b;
+            b=a-b;
+            a=a-b;
+            document.getElementById("print").innerHTML=`After swapping :\n a=${a}\n b=${b}`;
+        };
+    </script>
+</head>
+<body>
+    <button onclick="inpu()">Enter the number</button>
+    <p id="print"></p>
+</body>
+</html>
