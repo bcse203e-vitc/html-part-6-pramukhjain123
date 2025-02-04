@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find Second Smallest and Second Largest</title>
+    <script>
+      function findSecondSmallestAndLargest() {
+        let input = prompt("Enter an array of numbers separated by commas:");
+        let array = input
+          .split(",")
+          .map(Number)
+          .sort((a, b) => a - b);
+        let uniqueArray = [...new Set(array)];
+
+        if (uniqueArray.length < 2) {
+          alert("Array doesn't have enough unique elements.");
+        } else {
+          let secondSmallest = uniqueArray[1];
+          let secondLargest = uniqueArray[uniqueArray.length - 2];
+          alert(
+            `Second Smallest: ${secondSmallest}\nSecond Largest: ${secondLargest}`
+          );
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Find Second Smallest and Second Largest in an Array</h1>
+    <button onclick="findSecondSmallestAndLargest()">Find</button>
+  </body>
+</html>
