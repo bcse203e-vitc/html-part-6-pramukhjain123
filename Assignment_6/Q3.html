@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function inpu()
+        {
+            let d;
+            let a=parseFloat(prompt("Enter the first number:","")) ;
+            if(a%2==0)
+        {
+            d="Even";
+        }
+        else{
+            d="Odd"
+        }
+            document.getElementById("print").innerHTML=`The number is :${d}`;
+        };
+    </script>
+</head>
+<body>
+    <button onclick="inpu()">Enter the number</button>
+    <p id="print"></p>
+</body>
+</html>
