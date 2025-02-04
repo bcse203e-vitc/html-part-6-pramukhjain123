@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find the Missing Number</title>
+    <script>
+      function findMissingNumber() {
+        let input = prompt("Enter an array of numbers separated by commas:");
+        let array = input.split(",").map(Number);
+        let n = array.length + 1;
+        let totalSum = (n * (n + 1)) / 2;
+        let arraySum = array.reduce((acc, num) => acc + num, 0);
+        let missingNumber = totalSum - arraySum;
+        alert(`The missing number is: ${missingNumber}`);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Find the Missing Number in an Array</h1>
+    <button onclick="findMissingNumber()">Find Missing Number</button>
+  </body>
+</html>
