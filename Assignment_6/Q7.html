@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function inpu()
+        {
+        let a=parseFloat(prompt("Enter the  celsius:","")) ;
+        let f=0;
+        f=((a)*(9/5))+32;
+        document.getElementById("print").innerHTML=` The fahrenheit is :${f}`;
+        };
+    </script>
+</head>
+<body>
+    <button onclick="inpu()">Enter the number</button>
+    <p id="print"></p>
+</body>
+</html>
