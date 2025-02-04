@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function inpu()
+        {
+            let d=0;
+            let t;
+            let result=0;
+            let a=parseFloat(prompt("Enter the first number:","")) ;
+            let k=a;
+            while(a!=0)
+        {
+            d=a%10;
+            result=result*10+d;
+            a=Math.floor(a/10);
+        }
+            if(k==result)
+        {
+            t="Palindrome";
+        }
+        else{
+            t="not palindrome"
+        }
+        document.getElementById("print").innerHTML=` The number is :${result}   ${t}`;
+        };
+    </script>
+</head>
+<body>
+    <button onclick="inpu()">Enter the number</button>
+    <p id="print"></p>
+</body>
+</html>
