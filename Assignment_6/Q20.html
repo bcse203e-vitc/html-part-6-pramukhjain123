@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Count Occurrences of Each Character</title>
+    <script>
+      function countCharacterOccurrences() {
+        let input = prompt("Enter a string:");
+        let charCount = {};
+
+        for (let char of input) {
+          charCount[char] = (charCount[char] || 0) + 1;
+        }
+
+        alert(JSON.stringify(charCount));
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Count Occurrences of Each Character in a String</h1>
+    <button onclick="countCharacterOccurrences()">Count</button>
+  </body>
+</html>
